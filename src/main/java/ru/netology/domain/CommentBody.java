@@ -6,7 +6,7 @@ public class CommentBody {
 
     private int id;
     private String commentText;
-    private Date commentDate
+    private Date commentDate;
     private Author commentAuthor;
 
     public int getId() {

@@ -6,8 +6,12 @@ public class CommentsInfo {
 
     private int id;
     private int count;
-    private boolean canPost;
     private CommentBody comment;
+    // Added by VK's review
+    private boolean canPost;
+    private int groupsCanPost;
+    private int canClose;
+    private int canOpen;
 
     public int getId() {
         return id;
@@ -31,6 +35,30 @@ public class CommentsInfo {
 
     public void setCanPost(boolean canPost) {
         this.canPost = canPost;
+    }
+
+    public int getGroupsCanPost() {
+        return groupsCanPost;
+    }
+
+    public void setGroupsCanPost(int groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
+    }
+
+    public int getCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(int canClose) {
+        this.canClose = canClose;
+    }
+
+    public int getCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(int canOpen) {
+        this.canOpen = canOpen;
     }
 
     public CommentBody getComment() {

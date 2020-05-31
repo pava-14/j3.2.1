@@ -5,7 +5,7 @@ import java.util.Date;
 public class Post {
 
     private int id;
-    private String postTag;
+    private String postType;
     private String postSubject;
     private long countLike;
     private long countRepost;
@@ -21,12 +21,21 @@ public class Post {
     private int createdBy;
     private int replyOwnerId;
     private int replyPostId;
+    private int friendsOnly;
+    private String copyright;
     private Likes likes;
     private Repost reposts;
     private Views views;
-    // vk's post_type -> postTag
     private PostSource postSource;
     private Geo geo;
+    private int signerId;
+    private int canPin;
+    private int canDelete;
+    private int canEdit;
+    private int isPinned;
+    private int markedAsAds;
+    private boolean isFavorite;
+    private int postponedId;
 
     public int getId() {
         return id;
@@ -37,11 +46,11 @@ public class Post {
     }
 
     public String getPostTag() {
-        return postTag;
+        return postType;
     }
 
     public void setPostTag(String postTag) {
-        this.postTag = postTag;
+        this.postType = postTag;
     }
 
     public String getPostSubject() {
