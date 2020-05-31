@@ -9,7 +9,6 @@ public class PostManager {
         //TODO: Add logic later
         return null;
     }
-
     public void delete(int ownerId, int postId) {
         //TODO: Add logic later
     }
