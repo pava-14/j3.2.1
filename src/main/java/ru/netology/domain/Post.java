@@ -15,6 +15,19 @@ public class Post {
     private Author postAauthor;
     private CommentsInfo commentsInfo;
 
+    // Added by VK's review
+    private int ownerId;
+    private int fromId;
+    private int createdBy;
+    private int replyOwnerId;
+    private int replyPostId;
+    private Likes likes;
+    private Repost reposts;
+    private Views views;
+    // vk's post_type -> postTag
+    private PostSource postSource;
+    private Geo geo;
+
     public int getId() {
         return id;
     }
